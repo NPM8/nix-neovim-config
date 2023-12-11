@@ -16,10 +16,27 @@ with final.pkgs.lib; let
     # https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=vimPlugins
     nvim-treesitter.withAllGrammars
     luasnip # snippets | https://github.com/l3mon4d3/luasnip/
+    friendly-snippets
+    sniprun
+    # LSP
+    nvim-lspconfig # enable LSP
+	  nvim-lsp-installer # simple to use language server installer
+	  null-ls-nvim # for formatters and linters
+    lspsaga-nvim
+    # ^ LSP
+    # Dadbod
+    vim-dadbod
+    vim-dadbod-ui
+    vim-dadbod-completion
+    # ^ Dadbod
+    # Copilot
+    copilot-lua
+    # ^ Copilot
     # nvim-cmp (autocompletion) and extensions
     nvim-cmp # https://github.com/hrsh7th/nvim-cmp
     cmp_luasnip # snippets autocompletion extension for nvim-cmp | https://github.com/saadparwaiz1/cmp_luasnip/
     lspkind-nvim # vscode-like LSP pictograms | https://github.com/onsails/lspkind.nvim/
+    cmp_luasnip
     cmp-nvim-lsp # LSP as completion source | https://github.com/hrsh7th/cmp-nvim-lsp/
     cmp-nvim-lsp-signature-help # https://github.com/hrsh7th/cmp-nvim-lsp-signature-help/
     cmp-buffer # current buffer as completion source | https://github.com/hrsh7th/cmp-buffer/
@@ -27,12 +44,11 @@ with final.pkgs.lib; let
     cmp-nvim-lua # neovim lua API as completion source | https://github.com/hrsh7th/cmp-nvim-lua/
     cmp-cmdline # cmp command line suggestions
     cmp-cmdline-history # cmp command line history suggestions
+    copilot-cmp
     # ^ nvim-cmp extensions
     # git integration plugins
     diffview-nvim # https://github.com/sindrets/diffview.nvim/
-    neogit # https://github.com/TimUntersberger/neogit/
     gitsigns-nvim # https://github.com/lewis6991/gitsigns.nvim/
-    vim-fugitive # https://github.com/tpope/vim-fugitive/
     # ^ git integration plugins
     # telescope and extensions
     telescope-nvim # https://github.com/nvim-telescope/telescope.nvim/
@@ -44,6 +60,25 @@ with final.pkgs.lib; let
     nvim-navic # Add LSP location to lualine | https://github.com/SmiteshP/nvim-navic
     statuscol-nvim # Status column | https://github.com/luukvbaal/statuscol.nvim/
     nvim-treesitter-context # nvim-treesitter-context
+    nvim-tree-lua # file tree writen in lua
+    # Buffer
+    bufferline-nvim
+    nvim-web-devicons
+    vim-bbye # https://github.com/moll/vim-bbye/
+    # ^ Buffer
+    toggleterm-nvim
+
+    project-nvim
+    impatient-nvim
+    indent-blankline-nvim
+    # Screen
+    alpha-nvim
+    # ^ Screen
+    # Color schemes
+    sonokai
+    nord-nvim
+    tokyonight-nvim
+    # ^ Color schemes
     # ^ UI
     # language support
     neodev-nvim # adds support for Neovim's Lua API to lua-language-server | https://github.com/folke/neodev.nvim/
@@ -54,9 +89,13 @@ with final.pkgs.lib; let
     nvim-surround # https://github.com/kylechui/nvim-surround/
     nvim-treesitter-textobjects # https://github.com/nvim-treesitter/nvim-treesitter-textobjects/
     nvim-ts-context-commentstring # https://github.com/joosepalviste/nvim-ts-context-commentstring/
+    comment-nvim # https://github.com/numtostr/comment.nvim/
+    nvim-autopairs # automatic pairs | https://github.com/windwp/nvim-autopairs/
+    leap-nvim
     # ^ navigation/editing enhancement plugins
     # Useful utilities
     nvim-unception # Prevent nested neovim sessions | nvim-unception
+    which-key-nvim
     # ^ Useful utilities
     # libraries that other plugins depend on
     sqlite-lua
