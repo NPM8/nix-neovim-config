@@ -107,6 +107,7 @@ with final.pkgs.lib; let
     # bleeding-edge plugins from flake inputs
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
+    rest-nvim
   ];
 
   extraPackages = with pkgs; [
