@@ -144,15 +144,6 @@ local mappings = {
   -- 
   -- map({ "n", "<Leader>dc", ":lua require('dap.ui.variables').scopes()<CR>" })
   -- map({ "n", "<Leader>di", ":lua require('dapui').toggle()<CR>" })
-  p = {
-    name = "Packer",
-    c = { "<cmd>PackerCompile<cr>", "Compile" },
-    i = { "<cmd>PackerInstall<cr>", "Install" },
-    s = { "<cmd>PackerSync<cr>", "Sync" },
-    S = { "<cmd>PackerStatus<cr>", "Status" },
-    u = { "<cmd>PackerUpdate<cr>", "Update" },
-  },
-
   g = {
     name = "Git",
     g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
