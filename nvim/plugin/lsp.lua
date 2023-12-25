@@ -1,3 +1,16 @@
+local status_ok, _ = pcall(require, "lspconfig")
+if not status_ok then
+  return
+end
+-- imp
+
+local servers = { "gopls","hls", "jsonls", "lua_ls", "pylsp", "tsserver", "yamlls", "astro", "svelte", "ocamllsp", "rnix" }
+
+require("mason").setup()
+require("mason-lspconfig").setup({
+  ensure_installed = servers,
+})
+require("user.lsp.handlers").setup()
 local null_ls_status_ok, null_ls = pcall(require, "null-ls")
 if not null_ls_status_ok then
 	return
