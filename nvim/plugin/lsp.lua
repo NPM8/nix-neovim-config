@@ -7,9 +7,17 @@ end
 local servers = { "gopls","hls", "jsonls", "lua_ls", "pylsp", "tsserver", "yamlls", "astro", "svelte", "rnix" }
 
 require("mason").setup()
-require("mason-lspconfig").setup({
+local masonLsp = require("mason-lspconfig")
+masonLsp.setup({
   ensure_installed = servers,
 })
+
+masonLsp.setup_handlers({
+  function (server_name) 
+    require('lspconfig')[server_name].setup {}
+  end
+})
+
 require("user.lsp.handlers").setup()
 require("lspsaga").setup()
 local null_ls_status_ok, null_ls = pcall(require, "null-ls")
@@ -31,3 +39,5 @@ null_ls.setup({
     -- diagnostics.flake8
 	},
 })
+
+
