@@ -119,6 +119,9 @@ with final.pkgs.lib; let
     lazygit
     lazydocker
     opam
+    libstdcxx5
+    nodePackages.prettier
+    black
   ];
 in {
   # This is the neovim derivation
