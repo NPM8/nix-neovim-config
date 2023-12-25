@@ -124,6 +124,7 @@ in {
   # returned by the overlay
   nvim-pkg = mkNeovim {
     plugins = all-plugins;
+    withNodeJs = true;
     inherit extraPackages;
   };
 
