@@ -20,7 +20,8 @@ with final.pkgs.lib; let
     sniprun
     # LSP
     nvim-lspconfig # enable LSP
-	  nvim-lsp-installer # simple to use language server installer
+    mason-nvim
+    mason-lspconfig-nvim
 	  null-ls-nvim # for formatters and linters
     lspsaga-nvim
     # ^ LSP
