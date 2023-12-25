@@ -112,6 +112,11 @@ with final.pkgs.lib; let
     # language servers, etc.
     lua-language-server
     nil # nix LSP
+    ripgrep
+    fzf
+    curl
+    lazygit
+    lazydocker
   ];
 in {
   # This is the neovim derivation
