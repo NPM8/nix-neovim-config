@@ -118,6 +118,7 @@ with final.pkgs.lib; let
     curl
     lazygit
     lazydocker
+    opam
   ];
 in {
   # This is the neovim derivation

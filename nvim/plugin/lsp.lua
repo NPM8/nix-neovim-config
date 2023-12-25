@@ -4,13 +4,14 @@ if not status_ok then
 end
 -- imp
 
-local servers = { "gopls","hls", "jsonls", "lua_ls", "pylsp", "tsserver", "yamlls", "astro", "svelte", "ocamllsp", "rnix" }
+local servers = { "gopls","hls", "jsonls", "lua_ls", "pylsp", "tsserver", "yamlls", "astro", "svelte", "rnix" }
 
 require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = servers,
 })
 require("user.lsp.handlers").setup()
+require("lspsaga").setup()
 local null_ls_status_ok, null_ls = pcall(require, "null-ls")
 if not null_ls_status_ok then
 	return
