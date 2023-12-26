@@ -22,7 +22,7 @@ with final.pkgs.lib; let
     nvim-lspconfig # enable LSP
     mason-nvim
     mason-lspconfig-nvim
-	  null-ls-nvim # for formatters and linters
+    null-ls-nvim # for formatters and linters
     lspsaga-nvim
     # ^ LSP
     # Dadbod
@@ -37,7 +37,6 @@ with final.pkgs.lib; let
     nvim-cmp # https://github.com/hrsh7th/nvim-cmp
     cmp_luasnip # snippets autocompletion extension for nvim-cmp | https://github.com/saadparwaiz1/cmp_luasnip/
     lspkind-nvim # vscode-like LSP pictograms | https://github.com/onsails/lspkind.nvim/
-    cmp_luasnip
     cmp-nvim-lsp # LSP as completion source | https://github.com/hrsh7th/cmp-nvim-lsp/
     cmp-nvim-lsp-signature-help # https://github.com/hrsh7th/cmp-nvim-lsp-signature-help/
     cmp-buffer # current buffer as completion source | https://github.com/hrsh7th/cmp-buffer/
@@ -108,7 +107,7 @@ with final.pkgs.lib; let
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
     rest-nvim
-    ChatGPT-nvim 
+    /* ChatGPT-nvim  */
   ];
 
   extraPackages = with pkgs; [
