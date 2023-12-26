@@ -4,7 +4,7 @@ require("neodev").setup({
 
 return {
 	settings = {
-
+    before_init = require('neodev.lsp').before_init,
 		Lua = {
 			diagnostics = {
 				globals = { "vim" },

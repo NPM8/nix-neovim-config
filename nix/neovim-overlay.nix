@@ -31,7 +31,7 @@ with final.pkgs.lib; let
     vim-dadbod-completion
     # ^ Dadbod
     # Copilot
-    copilot-lua
+    copilot-lua # https://github.com/zbirenbaum/copilot.lua
     # ^ Copilot
     # nvim-cmp (autocompletion) and extensions
     nvim-cmp # https://github.com/hrsh7th/nvim-cmp
@@ -108,6 +108,7 @@ with final.pkgs.lib; let
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
     rest-nvim
+    ChatGPT-nvim 
   ];
 
   extraPackages = with pkgs; [
