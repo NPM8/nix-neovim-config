@@ -11,6 +11,10 @@
     #   url = "github:Cassin01/wf.nvim";
     #   flake = false;
     # };
+    leap-nvim = {
+      url = "github:ggandor/leap.nvim";
+      flake = false;
+    };
   };
 
   outputs = inputs @ {

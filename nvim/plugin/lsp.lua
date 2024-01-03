@@ -4,7 +4,7 @@ if not status_ok then
 end
 -- imp
 
-local servers = { "gopls","hls", "jsonls", "lua_ls", "pylsp", "tsserver", "yamlls", "astro", "svelte", "rnix" }
+local servers = { "gopls", "jsonls", "lua_ls", "pylsp", "tsserver", "yamlls", "astro", "svelte", "nil_ls" }
 
 require("mason").setup()
 local masonLsp = require("mason-lspconfig")
@@ -13,7 +13,7 @@ masonLsp.setup({
 })
 
 masonLsp.setup_handlers({
-  function (server_name) 
+  function (server_name)
     local opts = {
       on_attach = require("user.lsp.handlers").on_attach,
       capabilities = require("user.lsp.handlers").capabilities,

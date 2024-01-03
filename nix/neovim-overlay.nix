@@ -91,7 +91,6 @@ with final.pkgs.lib; let
     nvim-ts-context-commentstring # https://github.com/joosepalviste/nvim-ts-context-commentstring/
     comment-nvim # https://github.com/numtostr/comment.nvim/
     nvim-autopairs # automatic pairs | https://github.com/windwp/nvim-autopairs/
-    leap-nvim
     # ^ navigation/editing enhancement plugins
     # Useful utilities
     nvim-unception # Prevent nested neovim sessions | nvim-unception
@@ -104,6 +103,7 @@ with final.pkgs.lib; let
     vim-repeat
     # ^ libraries that other plugins depend on
     # bleeding-edge plugins from flake inputs
+    (mkNvimPlugin inputs.leap-nvim "leap.nvim")
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
     rest-nvim
@@ -122,6 +122,9 @@ with final.pkgs.lib; let
     opam
     libstdcxx5
     nodePackages.prettier
+  ];
+  extraPython3Packages = with pkgs.python311Packages; [
+    python-lsp-server 
     black
   ];
 in {
@@ -130,6 +133,7 @@ in {
   nvim-pkg = mkNeovim {
     plugins = all-plugins;
     withNodeJs = true;
+
     inherit extraPackages;
   };
 

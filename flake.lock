@@ -18,13 +18,29 @@
         "type": "github"
       }
     },
+    "leap-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1704145280,
+        "narHash": "sha256-iupS7DJXoB7L0tvt5QIo8SYpJ2q87Wk/6J+1yBj6sUU=",
+        "owner": "ggandor",
+        "repo": "leap.nvim",
+        "rev": "2253ff8e75776a5fc6046d06a68346a97cea40e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ggandor",
+        "repo": "leap.nvim",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1703255338,
-        "narHash": "sha256-Z6wfYJQKmDN9xciTwU3cOiOk+NElxdZwy/FiHctCzjU=",
+        "lastModified": 1703961334,
+        "narHash": "sha256-M1mV/Cq+pgjk0rt6VxoyyD+O8cOUiai8t9Q6Yyq4noY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6df37dc6a77654682fe9f071c62b4242b5342e04",
+        "rev": "b0d36bd0a420ecee3bc916c91886caca87c894e9",
         "type": "github"
       },
       "original": {
@@ -37,6 +53,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "leap-nvim": "leap-nvim",
         "nixpkgs": "nixpkgs"
       }
     },
