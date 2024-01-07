@@ -47,7 +47,7 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 vim.o.exrc = true
 
 if vim.g.neovide then
-  vim.o.guifont = "Fira code,monospace:h10"
+  --[[ vim.o.guifont = "Fira code,monospace:h10" ]]
   vim.g.neovide_scale_factor = 0.7
 end
 
