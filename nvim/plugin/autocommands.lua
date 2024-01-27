@@ -41,6 +41,11 @@ vim.cmd [[
     endif
 ]]
 
+vim.cmd [[
+  au BufNewFile,BufRead,BufEnter *.md setlocal spell
+  au BufNewFile,BufRead,BufEnter *.http set filetype=http
+]]
+
 
 -- Autoformat
 -- augroup _lsp

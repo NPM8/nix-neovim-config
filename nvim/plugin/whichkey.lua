@@ -211,11 +211,11 @@ local mappings = {
   r = {
     name = "Run",
     f = { "<cmd>SnipRun<cr>", "Snip Run" },
-    h = { "<Plug>RestNvim", "Run request REST" },
+    h = { "<cmd>lua require('rest-nvim').run()<cr>", "Run request REST" },
     e = {
       name = "REST specific",
-      l = { "<Plug>RestNvimLast", "Run last request REST" },
-      p = { "<Plug>RestNvimPreview", "Run last request REST" },
+      l = { "<cmd>lua require('rest-nvim').last()<cr>", "Run last request REST" },
+      p = { "<cmd>lua require('rest-nvim').run(true)<cr>", "Run last request REST" },
     },
   },
   t = {
