@@ -1,4 +1,4 @@
-{inputs}: final: prev:
+{ inputs }: final: prev:
 with final.pkgs.lib; let
   pkgs = final;
 
@@ -9,7 +9,7 @@ with final.pkgs.lib; let
       version = src.lastModifiedDate;
     };
 
-  mkNeovim = pkgs.callPackage ./mkNeovim.nix {};
+  mkNeovim = pkgs.callPackage ./mkNeovim.nix { };
 
   all-plugins = with pkgs.vimPlugins; [
     # plugins from nixpkgs go in here.
@@ -119,9 +119,16 @@ with final.pkgs.lib; let
       };
       version = "2023-01-06";
       meta.homepage = "https://www.vim.org/scripts/script.php?script_id=5760";
-     })
+    })
     # ^ yarn utilities
     /* ChatGPT-nvim  */
+  ];
+
+  resolvedExtraLuaPackages = with pkgs.lua52Packages; [
+    lua-curl
+    nvim-nio
+    mimetypes
+    xml2lua
   ];
 
   extraPackages = with pkgs; [
@@ -136,24 +143,21 @@ with final.pkgs.lib; let
     opam
     stdenv.cc.cc.lib
     pam
-    luajitPackages.lua-curl
-    luajitPackages.nvim-nio
-    luajitPackages.mimetypes
-    luajitPackages.xml2lua
     nodePackages.prettier
   ];
   extraPython3Packages = with pkgs.python311Packages; [
-    python-lsp-server 
+    python-lsp-server
     black
   ];
-in {
+in
+{
   # This is the neovim derivation
   # returned by the overlay
   nvim-pkg = mkNeovim {
     plugins = all-plugins;
     withNodeJs = true;
 
-    inherit extraPackages;
+    inherit extraPackages resolvedExtraLuaPackages;
   };
 
   # You can add as many derivations as you like.

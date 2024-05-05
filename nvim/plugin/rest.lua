@@ -10,7 +10,7 @@ rest.setup({
   encode_url = true,
   -- Highlight request on run
   highlight = {
-    enabled = true,
+    enable = true,
     timeout = 150,
   },
   result = {
