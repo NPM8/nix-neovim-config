@@ -107,6 +107,7 @@ with final.pkgs.lib; let
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
     rest-nvim
+
     # yarn utilities
     (pkgs.vimUtils.buildVimPlugin {
       pname = "rzip.vim";
@@ -135,6 +136,10 @@ with final.pkgs.lib; let
     opam
     stdenv.cc.cc.lib
     pam
+    luajitPackages.lua-curl
+    luajitPackages.nvim-nio
+    luajitPackages.mimetypes
+    luajitPackages.xml2lua
     nodePackages.prettier
   ];
   extraPython3Packages = with pkgs.python311Packages; [
