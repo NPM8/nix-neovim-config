@@ -1,6 +1,6 @@
-require("neodev").setup({
-  library = { plugins = "nvim-dap-ui", types = true, runtime = true, vimruntime = true },
-})
+--[[ require("neodev").setup({ ]]
+--[[   library = { plugins = "nvim-dap-ui", types = true, runtime = true, vimruntime = true }, ]]
+--[[ }) ]]
 
 return {
 	settings = {
