@@ -169,6 +169,7 @@ local mappings = {
     a = { "<cmd>Lspsaga code_action<cr>", "Code Action" },
     d = { "<cmd>Lspsaga peek_definition<cr>", "Preview Definition" },
     f = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Format" },
+    F = { "<cmd>Lspsaga finder ref+def+imp" },
     i = { "<cmd>LspInfo<cr>", "Info" },
     I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
     j = {
