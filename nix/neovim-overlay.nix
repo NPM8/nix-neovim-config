@@ -107,6 +107,19 @@ with final.pkgs.lib; let
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
     rest-nvim
+    # yarn utilities
+    (pkgs.vimUtils.buildVimPlugin {
+      pname = "rzip.vim";
+      src = pkgs.fetchFromGitHub {
+        owner = "lbrayner";
+        repo = "vim-rzip";
+        rev = "f65400fed27b27c7cff7ef8d428c4e5ff749bf28";
+        hash = "sha256-xy7rNqDVqlGapKClrP5BhfOORlMzHOQ8oIc8FdZT/AE=";
+      };
+      version = "2023-01-06";
+      meta.homepage = "https://www.vim.org/scripts/script.php?script_id=5760";
+     })
+    # ^ yarn utilities
     /* ChatGPT-nvim  */
   ];
 
@@ -120,7 +133,8 @@ with final.pkgs.lib; let
     lazygit
     lazydocker
     opam
-    libstdcxx5
+    stdenv.cc.cc.lib
+    pam
     nodePackages.prettier
   ];
   extraPython3Packages = with pkgs.python311Packages; [
