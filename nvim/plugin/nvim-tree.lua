@@ -4,7 +4,6 @@ if not status_ok then
   return
 end
 
---
 -- This function has been generated from your
 --   view.mappings.list
 --   view.mappings.custom_only
