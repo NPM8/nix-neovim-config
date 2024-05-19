@@ -4,8 +4,10 @@ if not status_ok then
   return
 end
 
+-- this command not works in test env because of lack of 1password unfortuneatly
 chatgpt.setup {
-  api_key_cmd = "op read \"op://Private/OpenAPI Cred/credential\" --no-newline",yank_register = "+",
+  api_key_cmd = "op read 'op://private/openai-api-cred/credential' --no-newline",
+  yank_register = "+",
   edit_with_instructions = {
     diff = false,
     keymaps = {
