@@ -125,6 +125,11 @@ with final.pkgs.lib; let
     # ChatGPT
     ChatGPT-nvim
     # ^ ChatGPT
+   
+    # Time tracking
+    vim-wakatime
+    # ^ Time tracking
+
   ];
 
   resolvedExtraLuaPackages = with pkgs.lua52Packages; [
