@@ -122,7 +122,9 @@ with final.pkgs.lib; let
       meta.homepage = "https://www.vim.org/scripts/script.php?script_id=5760";
     })
     # ^ yarn utilities
-    /* ChatGPT-nvim  */
+    # ChatGPT
+    ChatGPT-nvim
+    # ^ ChatGPT
   ];
 
   resolvedExtraLuaPackages = with pkgs.lua52Packages; [
