@@ -104,7 +104,7 @@ local mappings = {
     l = { "<cmd>ChatGPTRun code_readability_analysis<CR>", "Code Readability Analysis", mode = { "n", "v" } },
   },
   ["f"] = {
-    "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = true})<cr>",
+    "<cmd>Telescope find_files<cr>",
     "Find files",
   },
   ["F"] = { "<cmd>lua require('telescope.builtin').live_grep { theme=ivy }<cr>", "Find Text" },
