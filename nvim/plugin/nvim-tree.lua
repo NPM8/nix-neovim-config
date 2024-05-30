@@ -1,6 +1,8 @@
+-- This file is obsolite but maybe I will return to nvim-tree in the future
+-- CLEANUP
+
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
-  print "Failed to load nvim-tree"
   return
 end
 

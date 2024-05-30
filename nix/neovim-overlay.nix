@@ -68,10 +68,10 @@ with final.pkgs.lib; let
     vim-bbye # https://github.com/moll/vim-bbye/
     # ^ Buffer
     toggleterm-nvim
-
     project-nvim
     impatient-nvim
     indent-blankline-nvim
+    zen-mode-nvim
     # Screen
     alpha-nvim
     # ^ Screen
@@ -129,6 +129,7 @@ with final.pkgs.lib; let
     # Time tracking
     vim-wakatime
     # ^ Time tracking
+
 
   ];
 
