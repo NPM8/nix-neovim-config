@@ -11,6 +11,11 @@
       url = "github:ggandor/leap.nvim";
       flake = false;
     };
+
+    which-key = {
+      url = "github:folke/which-key.nvim";
+      flake = false;
+    };
   };
 
   outputs = inputs @ {

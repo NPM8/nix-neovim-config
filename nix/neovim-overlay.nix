@@ -95,7 +95,8 @@ with final.pkgs.lib; let
     # ^ navigation/editing enhancement plugins
     # Useful utilities
     nvim-unception # Prevent nested neovim sessions | nvim-unception
-    which-key-nvim
+    #which-key-nvim
+    (mkNvimPlugin inputs.which-key "which-key.nvim")
     # ^ Useful utilities
     # libraries that other plugins depend on
     sqlite-lua
