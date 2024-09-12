@@ -16,6 +16,11 @@
       url = "github:folke/which-key.nvim";
       flake = false;
     };
+
+    eyeliner = {
+      url = "github:jinh0/eyeliner.nvim";
+      flake = false;
+    };
   };
 
   outputs = inputs @ {
