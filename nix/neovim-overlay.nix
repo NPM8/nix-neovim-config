@@ -151,7 +151,6 @@ with final.pkgs.lib; let
     curl
     lazygit
     lazydocker
-    opam
     stdenv.cc.cc.lib
     pam
     nodePackages.prettier
