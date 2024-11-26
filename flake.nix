@@ -49,6 +49,7 @@
       shell = pkgs.mkShell {
         name = "nvim-devShell";
         buildInputs = with pkgs; [
+          git
           lua-language-server
           nil
           stylua
