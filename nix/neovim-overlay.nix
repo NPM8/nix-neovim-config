@@ -7,6 +7,7 @@ with final.pkgs.lib; let
     pkgs.vimUtils.buildVimPlugin {
       inherit pname src;
       version = src.lastModifiedDate;
+      doCheck = false;
     };
 
   mkNeovim = pkgs.callPackage ./mkNeovim.nix { };
@@ -30,6 +31,13 @@ with final.pkgs.lib; let
     vim-dadbod-ui
     vim-dadbod-completion
     # ^ Dadbod
+    # Dap
+    nvim-nio
+    nvim-dap
+    nvim-dap-ui
+    nvim-dap-python
+    nvim-dap-go
+    # ^ Dap
     # Copilot
     copilot-lua # https://github.com/zbirenbaum/copilot.lua
     # ^ Copilot
