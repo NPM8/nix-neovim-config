@@ -119,7 +119,7 @@ with final.pkgs.lib; let
     rest-nvim
 
     # Better 
-    mini-ai
+    # mini-ai
     # better surrands 
     # NOTE: recosider jump to change the mapping used for it to allow surrands
     # mini-surround
@@ -139,7 +139,7 @@ with final.pkgs.lib; let
     })
     # ^ yarn utilities
     # ChatGPT
-    ChatGPT-nvim
+    codecompanion-nvim
     # ^ ChatGPT
    
     # Time tracking

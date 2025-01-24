@@ -1,6 +1,5 @@
 local status_ok, ai = pcall(require, "mini.ai")
 if not status_ok then
-  print "Failed to load mini.ai"
   return
 end
 

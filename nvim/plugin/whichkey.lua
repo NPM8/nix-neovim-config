@@ -40,8 +40,9 @@ local setup = {
 }
 
 local mappings = {
-    { "<leader>A", group = "ChatGPT", nowait = true, remap = false },
-    { "<leader>Ac", "<cmd>ChatGPT<CR>", desc = "ChatGPT", nowait = true, remap = false },
+    { "<leader>A", "<cmd>CodeCompanionChat Toggle<CR>", desc = "Toggle Chat", nowait = true, remap = false },
+    --[[ { "<leader>A", group = "ChatGPT", nowait = true, remap = false }, ]]
+    --[[ { "<leader>Ac", "<cmd>ChatGPT<CR>", desc = "ChatGPT", nowait = true, remap = false }, ]]
     { "<leader>F", "<cmd>lua require('telescope.builtin').live_grep { theme=ivy }<cr>", desc = "Find Text", nowait = true, remap = false },
     { "<leader>P", "<cmd>lua require('telescope').extensions.projects.projects()<cr>", desc = "Projects", nowait = true, remap = false },
     { "<leader>a", "<cmd>Alpha<cr>", desc = "Alpha", nowait = true, remap = false },
@@ -128,21 +129,21 @@ local mappings = {
     { "<leader>tv", "<cmd>ToggleTerm size=80 direction=vertical<cr>", desc = "Vertical", nowait = true, remap = false },
     { "<leader>w", "<cmd>w!<CR>", desc = "Save", nowait = true, remap = false },
     { "<leader>z", "<cmd>ZenMode<cr>", desc = "ZenMode", nowait = true, remap = false },
-    {
-      mode = { "n", "v" },
-      { "<leader>Aa", "<cmd>ChatGPTRun add_tests<CR>", desc = "Add Tests", nowait = true, remap = false },
-      { "<leader>Ad", "<cmd>ChatGPTRun docstring<CR>", desc = "Docstring", nowait = true, remap = false },
-      { "<leader>Ae", "<cmd>ChatGPTEditWithInstruction<CR>", desc = "Edit with instruction", nowait = true, remap = false },
-      { "<leader>Af", "<cmd>ChatGPTRun fix_bugs<CR>", desc = "Fix Bugs", nowait = true, remap = false },
-      { "<leader>Ag", "<cmd>ChatGPTRun grammar_correction<CR>", desc = "Grammar Correction", nowait = true, remap = false },
-      { "<leader>Ak", "<cmd>ChatGPTRun keywords<CR>", desc = "Keywords", nowait = true, remap = false },
-      { "<leader>Al", "<cmd>ChatGPTRun code_readability_analysis<CR>", desc = "Code Readability Analysis", nowait = true, remap = false },
-      { "<leader>Ao", "<cmd>ChatGPTRun optimize_code<CR>", desc = "Optimize Code", nowait = true, remap = false },
-      { "<leader>Ar", "<cmd>ChatGPTRun roxygen_edit<CR>", desc = "Roxygen Edit", nowait = true, remap = false },
-      { "<leader>As", "<cmd>ChatGPTRun summarize<CR>", desc = "Summarize", nowait = true, remap = false },
-      { "<leader>At", "<cmd>ChatGPTRun translate<CR>", desc = "Translate", nowait = true, remap = false },
-      { "<leader>Ax", "<cmd>ChatGPTRun explain_code<CR>", desc = "Explain Code", nowait = true, remap = false },
-    },
+    --[[ { ]]
+    --[[   mode = { "n", "v" }, ]]
+    --[[   { "<leader>Aa", "<cmd>ChatGPTRun add_tests<CR>", desc = "Add Tests", nowait = true, remap = false }, ]]
+    --[[   { "<leader>Ad", "<cmd>ChatGPTRun docstring<CR>", desc = "Docstring", nowait = true, remap = false }, ]]
+    --[[   { "<leader>Ae", "<cmd>ChatGPTEditWithInstruction<CR>", desc = "Edit with instruction", nowait = true, remap = false }, ]]
+    --[[   { "<leader>Af", "<cmd>ChatGPTRun fix_bugs<CR>", desc = "Fix Bugs", nowait = true, remap = false }, ]]
+    --[[   { "<leader>Ag", "<cmd>ChatGPTRun grammar_correction<CR>", desc = "Grammar Correction", nowait = true, remap = false }, ]]
+    --[[   { "<leader>Ak", "<cmd>ChatGPTRun keywords<CR>", desc = "Keywords", nowait = true, remap = false }, ]]
+    --[[   { "<leader>Al", "<cmd>ChatGPTRun code_readability_analysis<CR>", desc = "Code Readability Analysis", nowait = true, remap = false }, ]]
+    --[[   { "<leader>Ao", "<cmd>ChatGPTRun optimize_code<CR>", desc = "Optimize Code", nowait = true, remap = false }, ]]
+    --[[   { "<leader>Ar", "<cmd>ChatGPTRun roxygen_edit<CR>", desc = "Roxygen Edit", nowait = true, remap = false }, ]]
+    --[[   { "<leader>As", "<cmd>ChatGPTRun summarize<CR>", desc = "Summarize", nowait = true, remap = false }, ]]
+    --[[   { "<leader>At", "<cmd>ChatGPTRun translate<CR>", desc = "Translate", nowait = true, remap = false }, ]]
+    --[[   { "<leader>Ax", "<cmd>ChatGPTRun explain_code<CR>", desc = "Explain Code", nowait = true, remap = false }, ]]
+    --[[ }, ]]
   }
 
 which_key.setup(setup)
