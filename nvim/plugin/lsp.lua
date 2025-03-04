@@ -6,7 +6,7 @@ if not status_ok then
 end
 -- imp
 
-local servers = { "gopls", "jsonls", "lua_ls", "pylsp", "tsserver", "yamlls", "astro", "svelte", "nil_ls", "tailwindcss" }
+local servers = { "gopls", "jsonls", "lua_ls", "pylsp", "tsserver", "yamlls", "astro", "svelte", "nil_ls", "tailwindcss", "intelephense", "volar" }
 
 require("mason").setup()
 local masonLsp = require("mason-lspconfig")
