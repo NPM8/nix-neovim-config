@@ -120,6 +120,7 @@ with final.pkgs.lib; let
 
     # Better 
     # mini-ai
+    mini-diff
     # better surrands 
     # NOTE: recosider jump to change the mapping used for it to allow surrands
     # mini-surround

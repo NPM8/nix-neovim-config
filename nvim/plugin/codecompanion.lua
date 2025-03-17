@@ -9,7 +9,26 @@ vim.env['CODECOMPANION_TOKEN_PATH'] = vim.fn.expand('~/.config')
 companion.setup {
   strategies = {
     --NOTE: Change the adapter as required
-    chat = { adapter = 'copilot' },
+    chat = {
+      adapter = 'copilot',
+      slash_commands = {
+        ["file"] = {
+          callback = "strategies.chat.slash_commands.file",
+          description = "Select a file using Telescope",
+          opts = {
+            provider = "telescope",
+            contains_code = true
+          }
+        },
+        ["buffer"] = {
+          callback = "strategies.chat.slash_commands.buffer",
+          description = "Select a buffer using Telescope",
+          opts = {
+            provider = "telescope",
+          }
+        }
+      },
+    },
     inline = {
       adapter = 'copilot',
       keymaps = {
@@ -38,6 +57,12 @@ companion.setup {
     diff = {
       enable = true,
       provider = 'mini_diff',
+      opts = {
+        -- Customize colors to match Tokyo Night theme
+        added = { fg = '#9ece6a', bg = '#1a1b26' },
+        modified = { fg = '#e0af68', bg = '#1a1b26' },
+        removed = { fg = '#f7768e', bg = '#1a1b26' },
+      },
     }
   },
 }
