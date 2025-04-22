@@ -23,7 +23,8 @@ with final.pkgs.lib; let
     nvim-lspconfig # enable LSP
     mason-nvim
     mason-lspconfig-nvim
-    null-ls-nvim # for formatters and linters
+    # null-ls-nvim # for formatters and linters
+    none-ls-nvim # for formatters and linters
     lspsaga-nvim
     # ^ LSP
     # Dadbod

@@ -1,13 +1,13 @@
-local status_ok, zenmode = pcall(require, "zen-mode")
+local status_ok, zenmode = pcall(require, 'zen-mode')
 if not status_ok then
-  print "‼ This plugin requires `zen-mode`. Please install dependencies.‼"
+  print('‼ This plugin requires `zen-mode`. Please install dependencies.‼')
   return
 end
 
-zenmode.setup({
+zenmode.setup {
   window = {
     backdrop = 0.95, -- shade the backdrop of the Zen window. Set to 1 to keep the same as Normal
-    width = .74,
+    width = 0.74,
     height = 1,
   },
   plugins = {
@@ -16,6 +16,4 @@ zenmode.setup({
     tmux = { enabled = false }, -- disables the tmux statusline
     twilight = { enabled = false }, -- enable the twilight plugin
   },
-})
-
-
+}
