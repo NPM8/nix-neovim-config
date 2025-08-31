@@ -5,12 +5,12 @@ if not status_ok then
 end
 
 vim.env['CODECOMPANION_TOKEN_PATH'] = vim.fn.expand('~/.config')
-
 companion.setup {
   strategies = {
     --NOTE: Change the adapter as required
     chat = {
-      adapter = 'copilot',
+      adapter = 'openai',
+      model = 'gpt-5',
       slash_commands = {
         ["file"] = {
           callback = "strategies.chat.slash_commands.file",
