@@ -43,15 +43,15 @@ local mappings = {
   {
     mode = { "n", "v" },
     { "<leader>a", "<cmd>CodeCompanionActions<CR>",     desc = "Chat actions", nowait = true, remap = false },
-    { "<leader>A", "<cmd>CodeCompanionChat Toggle<CR>", desc = "Toggle Chat", nowait = true, remap = false },
+    { "<leader>A", "<cmd>CodeCompanionChat Toggle<CR>", desc = "Toggle Chat",  nowait = true, remap = false },
   },
   {
     mode = { "v" },
-    { "ga", "<cmd>CodeCompanionChat Add<CR>", desc= "Add to chat", nowait = true, remap = false }
+    { "ga", "<cmd>CodeCompanionChat Add<CR>", desc = "Add to chat", nowait = true, remap = false }
   },
   {
     mode = { "i" },
-    { "<C-Space>", "<cmd>CodeCompanion<CR>", desc= "Inline chat", nowait = true, remap = false }
+    { "<C-Space>", "<cmd>CodeCompanion<CR>", desc = "Inline chat", nowait = true, remap = false }
   },
   --[[ { "<leader>A", group = "ChatGPT", nowait = true, remap = false }, ]]
   --[[ { "<leader>Ac", "<cmd>ChatGPT<CR>", desc = "ChatGPT", nowait = true, remap = false }, ]]
@@ -95,6 +95,7 @@ local mappings = {
   { "<leader>gr",  "<cmd>lua require 'gitsigns'.reset_hunk()<cr>",                                                                  desc = "Reset Hunk",            nowait = true, remap = false },
   { "<leader>gs",  "<cmd>lua require 'gitsigns'.stage_hunk()<cr>",                                                                  desc = "Stage Hunk",            nowait = true, remap = false },
   { "<leader>gu",  "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",                                                             desc = "Undo Stage Hunk",       nowait = true, remap = false },
+  { "<leader>gP",  "<cmd>Octo pr list<CR>",                                                                                         desc = "List PRs",              nowait = true, remap = false },
   { "<leader>l",   group = "LSP",                                                                                                   nowait = true,                  remap = false },
   { "<leader>lF",  desc = "<cmd>Lspsaga finder ref+def+imp",                                                                        nowait = true,                  remap = false },
   { "<leader>lI",  "<cmd>LspInstallInfo<cr>",                                                                                       desc = "Installer Info",        nowait = true, remap = false },
