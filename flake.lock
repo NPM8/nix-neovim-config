@@ -37,11 +37,11 @@
     "leap-nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1762908148,
-        "narHash": "sha256-sX/fk6AVQRqCxI/3mrpKOzoux1PDiKedaBpGGl2r/mw=",
+        "lastModified": 1765229303,
+        "narHash": "sha256-u8G8aGqZ5ovUCV+yaaj+zy6emz9h59lVBhzsxEFcPhg=",
         "owner": "ggandor",
         "repo": "leap.nvim",
-        "rev": "1fc7f38b69cc4644505e3ff74ba69b1682a85dd9",
+        "rev": "f19d43590c4b6d31188ee1ea2954d2b7558a9e11",
         "type": "github"
       },
       "original": {
@@ -52,11 +52,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1763283776,
-        "narHash": "sha256-Y7TDFPK4GlqrKrivOcsHG8xSGqQx3A6c+i7novT85Uk=",
+        "lastModified": 1769018530,
+        "narHash": "sha256-MJ27Cy2NtBEV5tsK+YraYr2g851f3Fl1LpNHDzDX15c=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "50a96edd8d0db6cc8db57dab6bb6d6ee1f3dc49a",
+        "rev": "88d3861acdd3d2f0e361767018218e51810df8a1",
         "type": "github"
       },
       "original": {
