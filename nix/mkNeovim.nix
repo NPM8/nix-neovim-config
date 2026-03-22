@@ -24,7 +24,6 @@ with lib;
       plugin = null; # e.g. nvim-lspconfig
       config = null; # plugin config
       optional = false;
-      runtime = {};
     };
 
     externalPackages = extraPackages ++ (optionals withSqlite [pkgs.sqlite]);

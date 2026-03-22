@@ -8,7 +8,7 @@
     # Add bleeding-edge plugins here.
     # They can be updated with `nix flake update` (make sure to commit the generated flake.lock)
     leap-nvim = {
-      url = "github:ggandor/leap.nvim";
+      url = "git+https://codeberg.org/andyg/leap.nvim";
       flake = false;
     };
 

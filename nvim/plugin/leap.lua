@@ -1,6 +1,9 @@
-local status_ok, leap = pcall(require, "leap")
+local status_ok, _ = pcall(require, "leap")
 if not status_ok then
 	return
 end
 
-leap.create_default_mappings()
+-- Sneak-style (directional forward/backward)
+vim.keymap.set({'n', 'x', 'o'}, 's',  '<Plug>(leap-forward)')
+vim.keymap.set({'n', 'x', 'o'}, 'S',  '<Plug>(leap-backward)')
+vim.keymap.set('n',             'gs', '<Plug>(leap-from-window)')

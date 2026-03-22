@@ -37,17 +37,17 @@
     "leap-nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1774113633,
-        "narHash": "sha256-0/enaRHzzaF2Cx3PzZFRR8Jy9EaSivU6mVjMfzH6JGo=",
-        "owner": "ggandor",
-        "repo": "leap.nvim",
-        "rev": "65029311a92178da073e4e8b621f2ea961de84be",
-        "type": "github"
+        "lastModified": 1774119522,
+        "narHash": "sha256-bzTsGy7rBueaiCMsjbaAcGp80HyIPaAVVCF/sBow8I4=",
+        "ref": "refs/heads/main",
+        "rev": "5dd46ec8989f556dcece404a1d4e410e0fad3734",
+        "revCount": 726,
+        "type": "git",
+        "url": "https://codeberg.org/andyg/leap.nvim"
       },
       "original": {
-        "owner": "ggandor",
-        "repo": "leap.nvim",
-        "type": "github"
+        "type": "git",
+        "url": "https://codeberg.org/andyg/leap.nvim"
       }
     },
     "nixpkgs": {
