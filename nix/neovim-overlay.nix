@@ -172,7 +172,7 @@ with final.pkgs.lib; let
     lazydocker
     stdenv.cc.cc.lib
     pam
-    nodePackages.prettier
+    prettier
   ];
   extraPython3Packages = with pkgs.python311Packages; [
     python-lsp-server
